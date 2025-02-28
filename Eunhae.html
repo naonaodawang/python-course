@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赫海：相伴的20年</title>
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #f0e6d2;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 导航栏样式 */
+    nav {
+      background-color: #4e3c2d;
+      color: white;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* 首页样式 */
+    #home {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    #home img {
+      width: 100%;
+      height: auto;
+      filter: blur(3px);
+    }
+
+    #home h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #home p {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 内容页通用样式 */
+ .content {
+      padding: 50px;
+    }
+
+    /* 成长之路页样式 */
+    #journey {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #journey.timeline {
+      position: relative;
+      width: 80%;
+    }
+
+    #journey.timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #c49f74;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    #journey.timeline-item {
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+    }
+
+    #journey.timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -7px;
+      background-color: #c49f74;
+      border: 4px solid white;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    #journey.timeline-item.left {
+      left: 0;
+    }
+
+    #journey.timeline-item.right {
+      left: 50%;
+    }
+
+    #journey.timeline-item img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #c49f74;
+    }
+
+    /* 音乐之旅页样式 */
+    #music {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #music.vinyl {
+      width:
